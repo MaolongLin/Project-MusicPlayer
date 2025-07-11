@@ -50,8 +50,10 @@
 
     if (audio.paused) {
         audio.play();
+        document.getElementById("Image").classList.add("rotating");
     } else {
         audio.pause();
+        document.getElementById("Image").classList.remove("rotating");
     }
 }
 
